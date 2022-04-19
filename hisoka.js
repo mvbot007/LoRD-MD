@@ -303,33 +303,28 @@ Selama ${clockString(new Date - user.afkTime)}
             }
             break	
         
-	    case 'script': case 'sc': case 'git': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/f8065d7fc4807a619ac1b.jpg' }, caption: `*──「 𝐋𝐨𝐑𝐃-𝐌𝐃 」──*
+	    case 'sc': 
+    case 'script':{
+      buttons = [
+                    {buttonId: `menu`, buttonText: {displayText: 'MENU️'}, type: 1},
+                     {buttonId: `owner`, buttonText: {displayText: 'OWNER️'}, type: 1}
+                ]
+                let buttonMessage = {
+                   image: { url: 'https://telegra.ph/file/f8065d7fc4807a619ac1b.jpg' },
+                    caption: `*──「 𝐋𝐨𝐑𝐃-𝐌𝐃 」──*
 
-❑ 𝑷𝒓𝒊𝒗𝒂𝒕𝒆 𝑩𝒐𝒕
-❑ 𝑺𝒄𝒓𝒊𝒑𝒕 𝑵𝒐𝒕 𝑨𝒗𝒂𝒊𝒍𝒂𝒃𝒍𝒆
+❑ http://github.com/Lord-official/LoRD-MD
 
-𝒔𝒆𝒓𝒊𝒚𝒆𝒏𝒏𝒂...🐦` }, { quoted: m })
-            }
-            break
-           /* case 'script':
-		case 'sc':
-		case 'git':
-		anu =`╭─ 𖣘𝐒𝐜𝐫𝐢𝐩𝐭 𝐍𝐨𝐭 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞
-│⍟𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐁𝐨𝐭 
-└──────────────────𖣘`
-let buttons = [
-  {buttonId: `${prefix}menu`, buttonText: {displayText: '𝒎𝒆𝒏𝒖'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝒐𝒘𝒏𝒆𝒓'}, type: 1}
-]
-
-            let buttonMessage = {
-                footer: hisoka.user.name,
-                buttons: buttons,
-                headerType: 1
+❑ 𝑫𝒐𝒏𝒕 𝑭𝒐𝒓𝒈𝒆𝒕 𝑻𝒐 𝑮𝒊𝒗𝒆 𝑺𝒕𝒂𝒓𝒕 🐦`,
+                    footer: hisoka.user.name,
+                    buttons: buttons,
+                    headerType: 4
                 }
-await hisoka.sendMessage(m.chat, buttonMessage, { quoted:m })
-		break*/
+                hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
+        }
+    
+        break
+
                 case 'tqto': case 'credits': case 'credit': case 'hehe': {
                 anu = `
 *𝑩𝑰𝑮 𝑻𝑯𝑨𝑵𝑲𝑺 𝑻𝑶*
